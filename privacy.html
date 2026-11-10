@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik ve veri kullanımı · HUTF Klinik Masa</title>
+<style>html{color-scheme:light dark;font:18px/1.65 system-ui,sans-serif}body{max-width:46rem;margin:4rem auto;padding:0 1.3rem}a{color:light-dark(#1857a0,#8dc2ff)}h1{font-size:2rem}h2{font-size:1.2rem;margin-top:2rem}footer{margin-top:3rem;font-size:.9rem}</style>
+<main>
+<p><a href="./">HUTF Klinik Masa</a></p>
+<h1>Gizlilik ve veri kullanımı</h1>
+<p>Bu metin, HUTF Klinik Masa'nın sunucuda çalışan Google Drive / Google Docs devir entegrasyonunu kapsar. Uygulama Mert Amasya tarafından yönetilir ve bilinen, yetkilendirilmiş kullanıcıların kapalı ekip kullanımına yöneliktir.</p>
+<h2>Erişilen bilgiler ve izinler</h2>
+<p>Google hesabı onay verdiğinde uygulama, Google Drive'daki dosyaların içeriğini ve üst verilerini okuma izni (<code>drive.readonly</code>) ile Google Docs belgelerini okuma ve düzenleme izni (<code>documents</code>) ister. Bu Google izinleri teknik olarak hesabın erişebildiği belgeleri kapsayabilir. Devir bileşeninin üretim yapılandırması ise belirlenmiş kaynak belgeyi okumaya ve yalnızca belirlenmiş çalışma kopyasını düzenlemeye sınırlandırılmıştır.</p>
+<p>Belge içeriği hasta kimliği, klinik notlar, laboratuvar sonuçları ve servis iş akışı bilgileri içerebilir. Uygulama yalnızca devir güncellemesi, hasta ve yatış eşleştirmesi, kaynak doğrulaması ve teslim kontrolü için gereken verileri işler. Google erişim ve yenileme belirteçleri, kullanıcıdan tekrar tekrar giriş istemeden yetkili bağlantıyı sürdürebilmek için saklanır.</p>
+<h2>Kullanım, saklama ve paylaşım</h2>
+<p>Veriler, kullanıcının Google Drive / Docs hesabında ve uygulama yöneticisinin kontrolündeki sunucuda işlenir. Sunucuda çalışma durumu, gerekli kaynak kopyaları, teslim kayıtları ve geri dönüş yedekleri saklanır. Bunların amacı güncellemenin doğrulanması, hatanın araştırılması ve veri kaybı olmadan geri dönüş yapılabilmesidir. Erişim, yetkilendirilmiş sistem hesaplarıyla sınırlandırılır. Google API bağlantıları HTTPS kullanır.</p>
+<p>Bu devir bileşeni Google kullanıcı verilerini harici yapay zekâ hizmetlerine göndermez; reklam, satış veya genel amaçlı model eğitimi için kullanmaz. Çalışma kopyası, Google Drive'da kendisine zaten erişim verilmiş kişilerce görülebilir. Belge içerikleri bu açık bilgilendirme sitesine aktarılmaz. Site yalnızca uygulama hakkında statik bilgi içerir; hasta belgesi yükleme veya veri giriş alanı sunmaz.</p>
+<p>Sunucudaki kayıt ve yedekler, devir işinin sürekliliği, denetimi ve geri dönüş ihtiyacı boyunca tutulur; bu sayfa otomatik veya belirli gün sayılı silme taahhüdü içermez. Saklama veya kaldırma talebi, uygulama yöneticisine Google izin ekranında gösterilen destek adresinden iletilebilir. Google Drive belgelerinin paylaşımı ve saklanması, belge sahibinin yönetimindedir.</p>
+<h2>Yetkiyi kaldırma ve iletişim</h2>
+<p>Google bağlantısı <a href="https://myaccount.google.com/connections">Google hesabının üçüncü taraf bağlantıları</a> bölümünden kaldırılabilir. Bu işlem yeni Google erişimini durdurur; önceden oluşturulmuş belgeleri, sunucu kayıtlarını veya yedekleri kendiliğinden silmez. Bunlarla ilgili talepler uygulama yöneticisine iletilmelidir.</p>
+<p>Yönetici: <a href="https://github.com/keagenmert">Mert Amasya</a>. Destek için Google izin ekranındaki destek adresi kullanılabilir. Hasta bilgisi, belirteç veya parola açık GitHub sayfalarına gönderilmemelidir.</p>
+</main>
+<footer>Güncelleme: 10 Kasım 2026 · <a href="./">Ana sayfa</a></footer>
+</html>
+
